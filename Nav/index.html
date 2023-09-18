@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+ 
+  <title>To Do List</title>
+  
+</head>
+<body>
+
+    <header>
+        <h1>My To-Do List</h1>
+    </header>
+   
+   
+    <section id="top-section"class="main-section">
+        
+      </section>
+    
+      <section class="about" id="about-me">
+      <div class="container my-5">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+          
+           
+            <form action="">
+                <input type="text" class="todo-input">
+                <button class="todo-button" type="submit">
+                    <i class="fas fa-plus-circle fa-lg"></i>
+                </button>
+                <div class="select">
+                    <select name="todos" class="filter-todo">
+                        <option value="all">All</option>
+                        <option value="completed">Completed</option>
+                        <option value="incomplete">Incomplete</option>
+                    </select>
+                </div>
+            </form>
+            
+            <div class="todo-container">
+                <ul class="todo-list"></ul>
+            </div>
+        
+            <audio id="tingSound">
+                <source src="./mixkit-attention-bell-ding-586.wav" type="audio/mpeg">
+              </audio>
+            
+              <audio id="checkSound">
+                <source src="./snd_fragment_retrievewav-14728.mp3" type="audio/mpeg">
+              </audio> 
+              <audio id="trashSound">
+                <source src="./662341__fmaudio__interface-delete-4.wav" type="audio/mpeg">
+              </audio> 
+           
+          </div>
+          
+        </div>
+      </div>
+    
+    <script src="./index.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <canvas class="background"></canvas>
+    <script>
+        window.onload = function() {
+            Particles.init({
+                selector: '.background'
+            });
+        };
+    </script>
+</body>
+</html>
